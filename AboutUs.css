@@ -23,7 +23,7 @@ body{
 .home{
     font-family: 'Alegreya Sans';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 400px;
     font-size: 20px;
     line-height: 48px;
     text-align: center;
@@ -49,9 +49,10 @@ body{
     display: flex;
     flex-direction: row;
 }
-.membre{
+.membres{
     display: flex;
     flex-direction: row;
+    gap: 0px;
     
 }
 .alex{
@@ -67,6 +68,55 @@ body{
     display: flex;
     flex-direction: column;
     animation: slide-vertical 3s;
+    transition: all 0.5s ease-in-out;
+
+}
+.diallo{
+    height: 100vh;
+    width: 220px;
+    max-height: 100vh;
+    background:linear-gradient(#53ACD880, #53ACD880),
+    url('diallo.jpg');
+    background-size: cover;      /* pour que ça remplisse bien */
+    background-position: center; /* pour bien centrer */
+    background-repeat: no-repeat;/* pour pas que ça se répète */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    animation: slide-vertical 4s;
+    transition: all 0.5s ease-in-out;
+
+}
+.samuel{
+    height: 100vh;
+    width: 220px;
+    max-height: 100vh;
+    background:linear-gradient(#53ACD880, #53ACD880),
+    url('samuel.jpg');
+    background-size: cover;      /* pour que ça remplisse bien */
+    background-position: center; /* pour bien centrer */
+    background-repeat: no-repeat;/* pour pas que ça se répète */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    animation: slide-vertical 5s;
+    transition: all 0.5s ease-in-out;
+
+}
+.sofia{
+    height: 100vh;
+    width: 220px;
+    max-height: 100vh;
+    background:linear-gradient(#53ACD880, #53ACD880),
+    url('sofia.jpg');
+    background-size: cover;      /* pour que ça remplisse bien */
+    background-position: center; /* pour bien centrer */
+    background-repeat: no-repeat;/* pour pas que ça se répète */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    animation: slide-vertical 6s;
+    transition: all 0.5s ease-in-out;
 
 }
 .nom{
@@ -86,6 +136,97 @@ body{
     left: 10px;
     animation: fadeln 3s ;
 }
+.diallo:hover{
+    width: 662px;
+    height: 100vh;
+    position: relative;
+}
+.diallo:hover .nom{
+    position: absolute;
+    left: 10px;
+    animation: fadeln 3s ;
+}
+.diallo:hover .option{
+    display: block;
+    position: absolute;
+    color:#FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    right: 50px;
+    bottom: 100px;
+
+
+}
+.diallo:hover .taf{
+    position: absolute;
+    display: block;
+    color: #FFFFFF;
+    left: 10px;
+    max-width: 450px;
+    margin-top: 470px;
+
+}
+.samuel:hover{
+    width: 662px;
+    height: 100vh;
+    position: relative;
+}
+.samuel:hover .nom{
+    position: absolute;
+    left: 10px;
+    animation: fadeln 3s ;
+}
+.samuel:hover .option{
+    display: block;
+    position: absolute;
+    color:#FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    right: 50px;
+    bottom: 100px;
+
+
+}
+.samuel:hover .taf{
+    position: absolute;
+    display: block;
+    color: #FFFFFF;
+    left: 10px;
+    max-width: 450px;
+    margin-top: 470px;
+
+}
+.sofia:hover{
+    width: 662px;
+    height: 100vh;
+    position: relative;
+}
+.sofia:hover .nom{
+    position: absolute;
+    left: 10px;
+    animation: fadeln 3s ;
+}
+.sofia:hover .option{
+    display: block;
+    position: absolute;
+    color:#FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    right: 50px;
+    bottom: 100px;
+
+
+}
+.sofia:hover .taf{
+    position: absolute;
+    display: block;
+    color: #FFFFFF;
+    left: 10px;
+    max-width: 450px;
+    margin-top: 470px;
+
+}
+
 .option{
     display: none;
 }
@@ -125,11 +266,31 @@ body{
     margin-top: 470px;
 
 }
-.diallo{
-    height: 100vh;
-    max-height: 100vh;
-    background:linear-gradient(#53ACD880, #53ACD880),
-    url('alex.jpg');
+h3{
+    width: 300px;
+    height: auto;
+    margin-right: 0px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 49px;
+
+    background: linear-gradient(90deg, #63AFDB -14.2%, #0C1760 114.79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    animation: slide 3s ;
+}
+.textes{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    margin-left: 100px;
+    animation: fadeln 3s;
 }
 @keyframes fadeln{
     0%{opacity: 0;}

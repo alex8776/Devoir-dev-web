@@ -45,3 +45,118 @@ body{
 
     color: #63AFDB;
 }
+.main{
+   display: flex;
+   flex-direction: row;
+   gap: 100px;
+}
+.cercle{
+    height: 300px;
+    width: 300px;
+    background: linear-gradient(164.38deg, #53ACD8 10.92%, #3D2C72 90.77%);
+    border-radius: 50%;
+    margin-top: 120px;
+    margin-left: 100px;
+    justify-content: center;
+    align-items: center;
+    animation: fadeln 2s ;
+}
+.fille{
+    height: 600px;
+    width: auto;
+    bottom:0px;
+    position: absolute;
+    left: 20px;
+    animation: slideY 5s ;
+}
+.textes{
+    height: 405px;
+    width: 300px;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+}
+.P{
+    margin-top: 1px;
+    width: 370px;
+    animation: fadeln 8s ;
+}
+.lien{
+    color: #53ACD8;
+}
+.lien:hover{
+    color: #3D2C72;
+}
+.infos{
+    height: 500px;
+    width: 400px;
+    right: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 50px;
+    box-shadow: 0 0 18px 4px rgb(206, 206, 206);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    animation: fadeln 6s;
+    animation: slideX1 3s;
+    
+}
+
+input{
+    border-radius: 10px;
+    height: 40px;
+    width: 350px ;
+    animation: fadeln 6s;
+    border: solid #878888 2px;
+    color: #878888;
+    
+}
+p{
+    animation: fadeln 6s;
+}
+input:focus{
+    border: solid #63AFDB 2px;
+    color: #63AFDB;
+    outline: none;
+}
+input:hover{
+    border: solid #63AFDB 2px;
+    color: #63AFDB;
+    outline: none;
+}
+button{
+        background: linear-gradient(164.38deg, #53ACD8 10.92%, #3D2C72 90.77%);
+        border: none;
+        color: white;
+        border-radius: 50px;
+        height: 40px;
+        width: 350px ;
+        bottom: 10%;
+        margin-top: 10px;
+        animation: fadeln 6s;
+ }
+button:hover{
+        background: linear-gradient(164.38deg, #3D2C72 10.92%, #53ACD8 90.77%);
+}
+@keyframes fadeln{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes slideY{
+    0%{transform: translateY(100%);}
+    100%{transform: translateY(0px);}
+
+}
+@keyframes slideX1{
+    0%{transform: translateX(100%);}
+    100%{transform: translateX(0px);}
+
+}
+@keyframes slideX2{
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(100px);}
+
+}
