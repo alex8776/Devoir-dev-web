@@ -1,0 +1,146 @@
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+.barre_du_haut{
+    background-color: white;
+    border-radius: 40px;
+    border: 2px solid #53ACD8;
+    height: 56px;
+    width: 100%;
+    top: -48px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.logo{
+    height: 56px;
+    width: auto;
+ 
+}
+.home{
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 5px;
+
+    color: #63AFDB;
+
+}
+.About{
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 5px;
+
+    color: #63AFDB;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.membre{
+    display: flex;
+    flex-direction: row;
+    
+}
+.alex{
+    height: 100vh;
+    width: 220px;
+    max-height: 100vh;
+    background:linear-gradient(#53ACD880, #53ACD880),
+    url('alex.jpg');
+    background-size: cover;      /* pour que ça remplisse bien */
+    background-position: center; /* pour bien centrer */
+    background-repeat: no-repeat;/* pour pas que ça se répète */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    animation: slide-vertical 3s;
+
+}
+.nom{
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 400px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: fadeln 8s ;
+}
+.alex:hover{
+    width: 662px;
+    height: 100vh;
+    position: relative;
+}
+.alex:hover .nom{
+    position: absolute;
+    left: 10px;
+    animation: fadeln 3s ;
+}
+.option{
+    display: none;
+}
+.ref{
+    display: none;
+}
+.taf{
+    display: none;
+}
+.alex:hover .option{
+    display: block;
+    position: absolute;
+    color:#FFFFFF;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    right: 50px;
+    bottom: 100px;
+
+
+}
+.alex:hover .ref{
+    position: absolute;
+    display: block;
+    color: #2949da;
+    left: 10px;
+    top: 390px;
+    margin-bottom: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.alex:hover .taf{
+    position: absolute;
+    display: block;
+    color: #FFFFFF;
+    left: 10px;
+    max-width: 450px;
+    margin-top: 470px;
+
+}
+.diallo{
+    height: 100vh;
+    max-height: 100vh;
+    background:linear-gradient(#53ACD880, #53ACD880),
+    url('alex.jpg');
+}
+@keyframes fadeln{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes slide-vertical{
+    0%{transform: translateY(100%);}
+    100%{transform: translateY(0px);}
+
+}@keyframes slide-horizontal{
+    0%{transform: translateX(0%);}
+    100%{transform: translateX(1px);}
+
+}

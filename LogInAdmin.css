@@ -1,0 +1,47 @@
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+.barre_du_haut{
+    background-color: white;
+    border-radius: 40px;
+    border: 2px solid #53ACD8;
+    height: 56px;
+    width: 100%;
+    top: -48px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.logo{
+    height: 56px;
+    width: auto;
+ 
+}
+.home{
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 5px;
+
+    color: #63AFDB;
+
+}
+.About{
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 5px;
+
+    color: #63AFDB;
+}

@@ -1,0 +1,150 @@
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+.barre_du_haut{
+    background-color: white;
+    border-radius: 40px;
+    border: 2px solid #53ACD8;
+    height: 56px;
+    width: 100%;
+    top: -48px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    animation: fadeln 2s ;
+}
+.logo{
+    height: 56px;
+    width: auto;
+    animation: fadeln 4s ;
+}
+.home{
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    margin-left: 40%;
+    margin-top: 5px;
+
+    color: #63AFDB;
+    animation: fadeln 5s ;
+
+}
+.About{
+    font-family: 'Alegreya Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 5px;
+
+    color: #63AFDB;
+    animation: fadeln 5s ;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+}
+.cercle{
+    height: 370px;
+    width: 370px;
+    background: linear-gradient(164.38deg, #53ACD8 10.92%, #3D2C72 90.77%);
+    border-radius: 50%;
+    margin-left: 20%;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    animation: fadeln 2s ;
+}
+.textes{
+    height: 405px;
+    width: 490px;
+    margin-left: 100px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+.fille{
+    height: 670px;
+    width: auto;
+    top:10px;
+    position: absolute;
+    right: 100px;
+    animation: slide 5s ;
+}
+
+h3{
+    width: 370px;
+    height: auto;
+    margin-left: 50px;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 49px;
+
+    background: linear-gradient(90deg, #63AFDB -14.2%, #0C1760 114.79%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    animation: slide 3s ;
+}
+.p{
+    margin-top: 1px;
+    width: 370px;
+    margin-left: 50px;
+    animation: fadeln 8s ;
+}
+.bouttons{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    width: 370px;
+    
+}
+button{
+    border-radius: 50px;
+    height: 40px;
+    margin-top: 10px;
+
+}
+.Log{
+    background: linear-gradient(164.38deg, #53ACD8 10.92%, #3D2C72 90.77%);
+    border: none;
+    color: white;
+    animation: fadeln 3s ;
+    animation: slide 3s ;
+}
+.Log:hover{
+    background: linear-gradient(164.38deg, #3D2C72 10.92%, #53ACD8 90.77%);
+}
+.Sign{
+    background-color: white;
+    border: solid #53ACD8;
+    color: #53ACD8;
+    animation: fadeln 6s ;
+    animation: slide 6s ;
+
+}
+.Sign:hover{
+    background-color:#53ACD8 ;
+    color: white;
+}
+@keyframes fadeln{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes slide{
+    0%{transform: translateY(100%);}
+    100%{transform: translateY(0px);}
+
+}
