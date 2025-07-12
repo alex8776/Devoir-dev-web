@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dashboard - Gestion Scolaire</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==== SIDEBAR ==== -->
+  <aside class="sidebar">
+    <h2>Admin Panel</h2>
+    <ul>
+      <li><a href="dashboard.html" class="active"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+      <li><a href="..\students\students.html"><i class="fas fa-user-graduate"></i> Students</a></li>
+      <li><a href="#"><i class="fas fa-book"></i> Subjects</a></li>
+      <li><a href="..\notes\notes.html"><i class="fas fa-pen"></i> Notes</a></li>
+      <li><a href="#"><i class="fas fa-school"></i> Classes</a></li>
+      <li><a href="..\inscription\inscription.html" ><i class="fas fa-user-plus"></i> Inscriptions</a></li>
+    </ul>
+  </aside>
+
+  <!-- ==== MAIN CONTENT ==== -->
+  <main class="main-content">
+
+    <!-- 🔹 STAT CARDS -->
+    <section class="cards">
+      <div class="card" id="total-eleves">
+        <h3>Total Élèves</h3>
+        <div class="value">--</div>
+      </div>
+      <div class="card" id="total-classes">
+        <h3>Total Classes</h3>
+        <div class="value">--</div>
+      </div>
+      <div class="card" id="autre-stats">
+        <h3>Autre Stat</h3>
+        <div class="value">--</div>
+      </div>
+    </section>
+
+    <!-- 🔻 DEUX ZONES BASSES -->
+    <section class="bottom-section">
+      <!-- Top étudiants -->
+      <div class="bottom-card">
+        <h4>🏅 Meilleurs Élèves</h4>
+        <ul id="top-eleves-list">
+          <li>Chargement...</li>
+        </ul>
+      </div>
+
+      <!-- Répartition par classe -->
+      <div class="bottom-card">
+        <h4>👥 Répartition des Classes</h4>
+        <div id="classes-distribution">
+          <p>Chargement...</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>

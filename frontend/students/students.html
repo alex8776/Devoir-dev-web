@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Liste des Élèves</title>
+  <link rel="stylesheet" href="students.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- === SIDEBAR === -->
+  <aside class="sidebar">
+    <h2>Admin Panel</h2>
+    <ul>
+      <li><a href="../dashboard/dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+      <li><a href="students.html" class="active"><i class="fas fa-user-graduate"></i> Students</a></li>
+      <li><a href="#"><i class="fas fa-book"></i> Subjects</a></li>
+      <li><a href="..\notes\notes.html"><i class="fas fa-pen"></i> Notes</a></li>
+      <li><a href="#"><i class="fas fa-school"></i> Classes</a></li>
+      <li><a href="../inscription/inscription.html"><i class="fas fa-user-plus"></i> Inscriptions</a></li>
+    </ul>
+  </aside>
+
+  <!-- === MAIN CONTENT === -->
+  <main class="main-content">
+    <h2>Liste des Élèves</h2>
+
+    <!-- === FILTRES === -->
+    <section class="filter-box">
+      <div class="filter-group">
+        <label for="filiere">Filière</label>
+        <select id="filiere">
+          <option value="">Toutes</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="classe">Classe</label>
+        <select id="classe">
+          <option value="">Toutes</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" placeholder="Rechercher nom" />
+      </div>
+
+      <div class="filter-group">
+        <label for="prenom">Prénom</label>
+        <input type="text" id="prenom" placeholder="Rechercher prénom" />
+      </div>
+
+      <div class="filter-group">
+        <button id="rechercher-btn"><i class="fas fa-search"></i> Rechercher</button>
+      </div>
+    </section>
+
+    <!-- === TABLEAU === -->
+    <section class="table-section">
+      <table>
+        <thead>
+          <tr>
+            <th>Matricule</th>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Genre</th>
+            <th>Date Naissance</th>
+            <th>Classe</th>
+            <th>Filière</th>
+          </tr>
+        </thead>
+        <tbody id="eleves-body">
+          <tr><td colspan="8">Chargement...</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <script src="students.js"></script>
+</body>
+</html>

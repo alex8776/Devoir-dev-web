@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inscription Élève</title>
+    <link rel="stylesheet" href="inscription.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+
+    <aside class="sidebar">
+        <h2>Admin Panel</h2>
+        <ul>
+            <li><a href="..\dashboard\dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
+            <li><a href="..\students\students.html"><i class="fas fa-user-graduate"></i> Students</a></li>
+            <li><a href="#"><i class="fas fa-book"></i> Subjects</a></li>
+            <li><a href="..\notes\notes.html"><i class="fas fa-pen"></i> Notes</a></li>
+            <li><a href="#"><i class="fas fa-school"></i> Classes</a></li>
+            <li><a href="inscription.html" class="active"><i class="fas fa-user-plus"></i> Inscriptions</a></li>
+        </ul>
+    </aside>
+
+    <div class="form-container">
+        <h2>Inscription Élève</h2>
+        <form id="inscription-form">
+
+            <div class="row">
+                <div class="field">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" name="nom" required />
+                </div>
+
+                <div class="field">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" name="prenom" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label for="genre">Genre</label>
+                    <select id="genre" name="genre" required>
+                        <option value="" disabled selected>Choisir</option>
+                        <option value="M">Masculin</option>
+                        <option value="F">Féminin</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="date_naissance">Date de naissance</label>
+                    <input type="date" id="date_naissance" name="date_naissance" required />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label for="classe">Classe</label>
+                    <select id="classe" name="classe" required>
+                        <option value="" disabled selected>Chargement...</option>
+                    </select>
+                </div>
+
+                <div class="field">
+                    <label for="filiere">Filière</label>
+                    <select id="filiere" name="filiere" required>
+                        <option value="" disabled selected>Chargement...</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="field">
+                    <label for="annee">Année scolaire</label>
+                    <select id="annee" name="annee" required>
+                        <option value="" disabled selected>Chargement...</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit">S'inscrire</button>
+            <p class="error-msg" id="error-msg"></p>
+        </form>
+    </div>
+
+    <script src="inscription.js"></script>
+</body>
+
+</html>
