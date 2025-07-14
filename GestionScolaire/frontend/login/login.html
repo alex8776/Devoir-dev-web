@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="LogInAdmin.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="barre_du_haut">
+        <img onclick="window.location.href='../Home/home.html'"  class="logo" src="../images/logo.png" alt="logo">
+        <p onclick="window.location.href='../Home/home.html'" class="home">Home</p>
+        <p onclick="window.location.href='../About US/AboutUs.html'" class="About">About Us</p>
+    </div>
+    <div class="main">
+        <div class="cercle">
+            <img class="fille" src="../images/admin.png" alt="fille">
+        </div>
+        <div class="textes">
+            <p class="p">Bienvenue dans l’espace Administrateurs de CampusHub, votre plateforme dédiée à la gestion de l’enseignement à distance. Cet environnement institutionnel et intuitif vous met à disposition des outils performants pour piloter efficacement votre établissement. Connectez-vous pour accéder à votre tableau de bord et gérer vos activités pédagogiques à distance.</p>
+        </div>
+        <form onsubmit="window.location.href='../LogoLogInAdmin.html'; return false" class="infos" action="">
+            <p>Entrer vos informations personnelles !</p>
+            <input type="text" name="UserName" placeholder="Entrez votre Nom !">
+            <input type="password" name="Passeword" placeholder="Entrez votre mot de passe !">
+            <button type="submit" >Log In</button>
+            <p class="lien">Log In as Student</p>
+
+
+      <p id="error-msg" class="error-msg"></p>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

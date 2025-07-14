@@ -1,33 +1,33 @@
-/* RESET */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 body {
+  margin: 0;
   font-family: 'Segoe UI', sans-serif;
-  background: #f4f4f4;
+  background: #ffffff;
   display: flex;
-  min-height: 100vh;
-  color: #333;
+  height: 100vh;
 }
 
-/* === SIDEBAR === */
+/* === SIDEBAR UNIFORMISÉE (Style dashboard) === */
 .sidebar {
   width: 220px;
   background-color: #ffffff;
-  padding: 20px;
-  flex-shrink: 0;
-  height: 100vh;
   border-right: 1px solid #ddd;
+  padding: 20px;
+  height: 100vh;
+  flex-shrink: 0;
+  box-shadow: 0 0 18px 4px rgb(206, 206, 206);
+
 }
 
-.sidebar h2 {
-  color: #004080;
-  font-size: 1.3rem;
-  text-align: center;
+.logo {
+  height: 100px;
+  width: auto;
   margin-bottom: 30px;
+  align-items: center;
 }
 
 .sidebar ul {
@@ -43,18 +43,16 @@ body {
   color: #333;
   text-decoration: none;
   font-size: 0.95rem;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 12px;
+  display: block;
+  padding: 10px;
   border-radius: 5px;
-  transition: background 0.3s, padding-left 0.3s;
+  transition: background-color 0.2s ease;
 }
 
 .sidebar ul li a:hover,
 .sidebar ul li a.active {
   background-color: #e6f0ff;
-  padding-left: 16px;
+  color: #53ACD8;
 }
 
 /* === MAIN CONTENT === */
@@ -78,7 +76,7 @@ body {
   background: white;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 18px 4px rgb(206, 206, 206);
 }
 
 .filter-group {
@@ -104,7 +102,7 @@ body {
 .filter-group button {
   margin-top: 25px;
   padding: 10px;
-  background-color: #0056b3;
+  background-color: #53ACD8;
   color: white;
   font-weight: bold;
   border: none;
@@ -113,42 +111,34 @@ body {
 }
 
 .filter-group button:hover {
-  background-color: #003d82;
+  background-color: #53ACD8;
 }
 
-/* === TABLE SECTION === */
+/* === TABLE === */
 .table-section {
   background: white;
   padding: 15px;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 18px 4px rgb(206, 206, 206);
   overflow-x: auto;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  min-width: 600px;
 }
 
 thead {
-  background-color: #0056b3;
+  background-color: #53ACD8;
   color: white;
 }
 
 th, td {
   padding: 10px;
-  text-align: center;
+  text-align: left;
   border-bottom: 1px solid #ddd;
-  white-space: nowrap;
 }
 
 tbody tr:hover {
   background-color: #f1f1f1;
-}
-
-@media (max-width: 768px) {
-  .filter-box {
-    flex-direction: column;
-  }
 }

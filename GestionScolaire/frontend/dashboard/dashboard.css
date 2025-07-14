@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f0f2f5;
+  background-color: #ffffff;
   color: #333;
   display: flex;
   min-height: 100vh;
@@ -17,14 +17,15 @@ body {
   width: 220px;
   background-color: #ffffff;
   border-right: 1px solid #ddd;
+  box-shadow: 0 0 18px 4px rgb(206, 206, 206);
   padding: 20px;
 }
 
-.sidebar h2 {
-  color: #004080;
-  font-size: 1.3rem;
+.logo {
+  height: 100px;
+  width: auto;
   margin-bottom: 30px;
-  text-align: center;
+  align-items: center;
 }
 
 .sidebar ul {
@@ -47,7 +48,7 @@ body {
 .sidebar a.active,
 .sidebar a:hover {
   background-color: #e6f0ff;
-  color: #004080;
+  color: #53ACD8;
 }
 
 /* ==== MAIN CONTENT ==== */
@@ -69,7 +70,7 @@ body {
   padding: 20px;
   flex: 1;
   min-width: 200px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 18px 4px rgb(206, 206, 206);
 }
 
 .card h3 {
@@ -81,7 +82,7 @@ body {
 .card .value {
   font-size: 2rem;
   font-weight: bold;
-  color: #004080;
+  color: #53ACD8;
 }
 
 /* ==== ZONE BASSE ==== */
@@ -97,14 +98,14 @@ body {
   padding: 20px;
   flex: 1;
   min-width: 300px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 18px 4px rgb(206, 206, 206);
   max-height: 400px;
   overflow-y: auto;
 }
 
 .bottom-card h4 {
   margin-bottom: 15px;
-  color: #004080;
+  color: #53ACD8;
 }
 
 #top-eleves-list li {

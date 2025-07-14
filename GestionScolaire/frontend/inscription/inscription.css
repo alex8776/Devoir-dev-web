@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: #f4f4f4;
+  background: #fff;
   color: #333;
   display: flex;
   min-height: 100vh;
@@ -20,13 +20,14 @@ body {
   padding: 20px;
   height: 100vh;
   flex-shrink: 0;
+  box-shadow: 0 0 18px 4px rgb(206, 206, 206);
 }
 
-.sidebar h2 {
-  color: #004080;
-  font-size: 1.3rem;
+.logo {
+  height: 100px;
+  width: auto;
   margin-bottom: 30px;
-  text-align: center;
+  align-items: center;
 }
 
 .sidebar ul {
@@ -51,7 +52,7 @@ body {
 .sidebar ul li a:hover,
 .sidebar ul li a.active {
   background-color: #e6f0ff;
-  color: #004080;
+  color: #53ACD8;
 }
 
 
@@ -60,7 +61,7 @@ body {
   background: #fff;
   padding: 25px 30px;
   border-radius: 8px;
-  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 18px 4px rgb(206, 206, 206);
   max-width: 700px;
   margin: 40px auto;
   flex-grow: 1;
@@ -106,13 +107,13 @@ input, select {
 }
 
 input:focus, select:focus {
-  border-color: #007bff;
+  border-color: #53ACD8;
   outline: none;
 }
 
 button {
   padding: 12px;
-  background-color: #0056b3;
+  background-color: #53ACD8;
   color: white;
   font-weight: bold;
   border: none;
@@ -124,7 +125,7 @@ button {
 }
 
 button:hover {
-  background-color: #003d82;
+  background-color: #53ACD8;
 }
 
 .error-msg {

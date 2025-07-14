@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusHub</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        img{
+            height: 500px;
+            width: auto ;
+            margin-top: 70px;
+            animation: fadeln 2s ;
+        }
+        @keyframes fadeln{
+            0%{opacity: 0;}
+            100%{opacity: 1;}
+        }
+    </style>
+</head>
+<body>
+    <img src="./images/logo.png" alt="logo">
+</body>
+<script>
+        window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        window.location.href = "./dashboard/dashboard.html";
+    }, 3000); 
+    });
+    window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+        window.location.href = "./dashboard/dashboard.html";
+    }, 2000); 
+    });
+
+</script>
+</html>

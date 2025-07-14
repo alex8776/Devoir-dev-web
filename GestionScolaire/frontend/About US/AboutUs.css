@@ -60,7 +60,7 @@ body{
     width: 220px;
     max-height: 100vh;
     background:linear-gradient(#53ACD880, #53ACD880),
-    url('alex.jpg');
+    url('../images/alex.jpg');
     background-size: cover;      /* pour que ça remplisse bien */
     background-position: center; /* pour bien centrer */
     background-repeat: no-repeat;/* pour pas que ça se répète */
@@ -76,7 +76,7 @@ body{
     width: 220px;
     max-height: 100vh;
     background:linear-gradient(#53ACD880, #53ACD880),
-    url('diallo.jpg');
+    url('../images/diallo.jpg');
     background-size: cover;      /* pour que ça remplisse bien */
     background-position: center; /* pour bien centrer */
     background-repeat: no-repeat;/* pour pas que ça se répète */
@@ -92,7 +92,7 @@ body{
     width: 220px;
     max-height: 100vh;
     background:linear-gradient(#53ACD880, #53ACD880),
-    url('samuel.jpg');
+    url('../images/samuel.jpg');
     background-size: cover;      /* pour que ça remplisse bien */
     background-position: center; /* pour bien centrer */
     background-repeat: no-repeat;/* pour pas que ça se répète */
@@ -108,7 +108,7 @@ body{
     width: 220px;
     max-height: 100vh;
     background:linear-gradient(#53ACD880, #53ACD880),
-    url('sofia.jpg');
+    url('../images/sofia.jpg');
     background-size: cover;      /* pour que ça remplisse bien */
     background-position: center; /* pour bien centrer */
     background-repeat: no-repeat;/* pour pas que ça se répète */

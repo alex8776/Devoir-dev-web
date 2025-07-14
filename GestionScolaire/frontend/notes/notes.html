@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Liste des Élèves</title>
-  <link rel="stylesheet" href="students.css" />
+  <title>Gestion des Notes</title>
+  <link rel="stylesheet" href="notes.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
 
+<body>
   <!-- === SIDEBAR === -->
   <aside class="sidebar">
-    <h2>Admin Panel</h2>
+    <img onclick="window.location.href='../dashboard/dashboard.html'"  class="logo" src="../images/logo.png" alt="logo">
     <ul>
       <li><a href="../dashboard/dashboard.html"><i class="fas fa-chart-line"></i> Dashboard</a></li>
-      <li><a href="students.html" class="active"><i class="fas fa-user-graduate"></i> Students</a></li>
+      <li><a href="../students/students.html"><i class="fas fa-user-graduate"></i> Students</a></li>
       <li><a href="#"><i class="fas fa-book"></i> Subjects</a></li>
-      <li><a href="..\notes\notes.html"><i class="fas fa-pen"></i> Notes</a></li>
+      <li><a href="notes.html"><i class="fas fa-book active"></i> Notes</a></li>
       <li><a href="#"><i class="fas fa-school"></i> Classes</a></li>
       <li><a href="../inscription/inscription.html"><i class="fas fa-user-plus"></i> Inscriptions</a></li>
     </ul>
@@ -24,7 +25,7 @@
 
   <!-- === MAIN CONTENT === -->
   <main class="main-content">
-    <h2>Liste des Élèves</h2>
+    <h2>Liste des Notes</h2>
 
     <!-- === FILTRES === -->
     <section class="filter-box">
@@ -43,13 +44,20 @@
       </div>
 
       <div class="filter-group">
-        <label for="nom">Nom</label>
-        <input type="text" id="nom" placeholder="Rechercher nom" />
+        <label for="periode">Période</label>
+        <select id="periode">
+          <option value="">Toutes</option>
+          <option value="T1">Trimestre 1</option>
+          <option value="T2">Trimestre 2</option>
+          <option value="T3">Trimestre 3</option>
+        </select>
       </div>
 
       <div class="filter-group">
-        <label for="prenom">Prénom</label>
-        <input type="text" id="prenom" placeholder="Rechercher prénom" />
+        <label for="annee">Année</label>
+        <select id="annee">
+          <option value="">Toutes</option>
+        </select>
       </div>
 
       <div class="filter-group">
@@ -60,24 +68,21 @@
     <!-- === TABLEAU === -->
     <section class="table-section">
       <table>
-        <thead>
+        <thead id="notes-header">
           <tr>
-            <th>Matricule</th>
+            <th>ID Élève</th>
             <th>Nom</th>
-            <th>Prénom</th>
-            <th>Genre</th>
-            <th>Date Naissance</th>
-            <th>Classe</th>
-            <th>Filière</th>
+            <!-- Colonnes matières ajoutées dynamiquement -->
           </tr>
         </thead>
-        <tbody id="eleves-body">
-          <tr><td colspan="8">Chargement...</td></tr>
+        <tbody id="notes-body">
+          <tr><td colspan="99">Chargement des notes...</td></tr>
         </tbody>
       </table>
     </section>
   </main>
 
-  <script src="students.js"></script>
+  <script src="notes.js"></script>
 </body>
+
 </html>
